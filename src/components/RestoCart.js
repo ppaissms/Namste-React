@@ -1,11 +1,12 @@
 import React from 'react';
+import { CDN_URL } from '../utils/constant';
 
 const RestoCart = (props) => {
     const resto = props.resto.info;
     debugger;
     return (
         <div className='resto-cart'>
-            <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${resto.cloudinaryImageId}`}
+            <img src={`${CDN_URL}${resto.cloudinaryImageId}`}
                 alt='resto-item'
                 width={200}
                 height={200} />
